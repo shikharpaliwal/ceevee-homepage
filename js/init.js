@@ -151,7 +151,7 @@
 
       $.ajax({
 
-	      type: "GET",
+	      type: "POST",
 	      url: "inc/sendEmail.php",
 	      data: data,
 	      success: function(msg) {

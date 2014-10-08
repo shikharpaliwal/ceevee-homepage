@@ -4,12 +4,12 @@
 $siteOwnersEmail = 'shikhar.paliwal@gmail.com';
 
 
-if($_GET) {
+if($_POST) {
 
-   $name = trim(stripslashes($_GET['contactName']));
-   $email = trim(stripslashes($_GET['contactEmail']));
-   $subject = trim(stripslashes($_GET['contactSubject']));
-   $contact_message = trim(stripslashes($_GET['contactMessage']));
+   $name = trim(stripslashes($_POST['contactName']));
+   $email = trim(stripslashes($_POST['contactEmail']));
+   $subject = trim(stripslashes($_POST['contactSubject']));
+   $contact_message = trim(stripslashes($_POST['contactMessage']));
 
    // Check Name
 	if (strlen($name) < 2) {
